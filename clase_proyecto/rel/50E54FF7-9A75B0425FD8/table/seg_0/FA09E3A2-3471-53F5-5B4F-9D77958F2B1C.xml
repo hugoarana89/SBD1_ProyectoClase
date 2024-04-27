@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FA09E3A2-3471-53F5-5B4F-9D77958F2B1C" name="Departamento">
+<createdBy>hugo1</createdBy>
+<createdTime>2024-04-27 00:35:51 UTC</createdTime>
+<generatorID>D46EA39E-4AD3-D5EA-5767-F6147B1A6F49</generatorID>
+<ownerDesignName>clase_proyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_departamento" id="16C72CC1-F4F8-55A3-136C-52C236E5F78D">
+<createdBy>hugo1</createdBy>
+<createdTime>2024-04-27 06:23:46 UTC</createdTime>
+<ownerDesignName>clase_proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_departamento" id="24A6959F-C363-8FC7-8E92-322502CB4F9F">
+<createdBy>hugo1</createdBy>
+<createdTime>2024-04-27 00:35:51 UTC</createdTime>
+<generatorID>9808786C-4F9B-0E01-AA44-BB450EE37385</generatorID>
+<ownerDesignName>clase_proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_zona" id="D7FDC6DC-E2A7-5A8D-5D55-7971BF15EE80">
+<createdBy>hugo1</createdBy>
+<createdTime>2024-04-27 02:07:44 UTC</createdTime>
+<ownerDesignName>clase_proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3234684F-DA91-57A8-1057-5C534E8B5D0F" referredColumn="8711A534-46C8-DD39-5342-09A0FAF68F16"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="49C254F8-823F-190A-257E-66246D0A2431" name="Departamento_PK">
+<createdBy>hugo1</createdBy>
+<createdTime>2024-04-27 00:35:51 UTC</createdTime>
+<generatorID>A7363E2C-3CC2-16B6-0E86-F0199EE43E71</generatorID>
+<ownerDesignName>clase_proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="16C72CC1-F4F8-55A3-136C-52C236E5F78D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EDC5E7BB-2807-591B-479C-62E5B74DB04C" name="Departamento_Zona_FK">
+<createdBy>hugo1</createdBy>
+<createdTime>2024-04-27 02:07:44 UTC</createdTime>
+<ownerDesignName>clase_proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7FDC6DC-E2A7-5A8D-5D55-7971BF15EE80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

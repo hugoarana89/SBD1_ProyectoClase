@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8BE9EA5F-671F-F6D8-7508-B43B5EE92A70" name="País">
+<createdBy>hugo1</createdBy>
+<createdTime>2024-04-26 23:26:24 UTC</createdTime>
+<ownerDesignName>clase_proyecto</ownerDesignName>
+<engineerTo>
+<item key="50E54FF7-6C32-116B-2272-9A75B0425FD8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nombre_país" id="7EE2EE6E-5131-12B7-7193-D4BE7C2E0F67">
+<createdBy>hugo1</createdBy>
+<createdTime>2024-04-26 23:26:30 UTC</createdTime>
+<ownerDesignName>clase_proyecto</ownerDesignName>
+<engineerTo>
+<item key="50E54FF7-6C32-116B-2272-9A75B0425FD8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="943A35C6-F861-8675-7ACC-8E2FF4EE1777" name="País PK">
+<createdBy>hugo1</createdBy>
+<createdTime>2024-04-26 23:26:53 UTC</createdTime>
+<ownerDesignName>clase_proyecto</ownerDesignName>
+<engineerTo>
+<item key="50E54FF7-6C32-116B-2272-9A75B0425FD8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7EE2EE6E-5131-12B7-7193-D4BE7C2E0F67</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

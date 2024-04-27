@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="36D76751-3EAB-3AC7-9A26-8599A48F5BBD" name="País">
+<createdBy>hugo1</createdBy>
+<createdTime>2024-04-27 00:35:51 UTC</createdTime>
+<generatorID>8BE9EA5F-671F-F6D8-7508-B43B5EE92A70</generatorID>
+<ownerDesignName>clase_proyecto</ownerDesignName>
+<ordsAlias>pais</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nombre_país" id="DCC6AC59-99DA-93E3-D4B0-056F518B1BAD">
+<createdBy>hugo1</createdBy>
+<createdTime>2024-04-27 00:35:51 UTC</createdTime>
+<generatorID>7EE2EE6E-5131-12B7-7193-D4BE7C2E0F67</generatorID>
+<ownerDesignName>clase_proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5B31255F-7346-8996-7476-CD021F980BFC" name="País_PK">
+<createdBy>hugo1</createdBy>
+<createdTime>2024-04-27 00:35:51 UTC</createdTime>
+<generatorID>943A35C6-F861-8675-7ACC-8E2FF4EE1777</generatorID>
+<ownerDesignName>clase_proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCC6AC59-99DA-93E3-D4B0-056F518B1BAD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="305EC4AC-48AA-E8D1-DEE7-D648273C5A91" name="Región">
+<createdBy>hugo1</createdBy>
+<createdTime>2024-04-27 01:52:06 UTC</createdTime>
+<ownerDesignName>clase_proyecto</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nombre_región" id="109F1718-2A60-EB5E-34FE-5A940DEFC445">
+<createdBy>hugo1</createdBy>
+<createdTime>2024-04-27 01:52:36 UTC</createdTime>
+<ownerDesignName>clase_proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="326CBC64-7EE4-6251-34C3-CCB60FE62150" name="Región_PK">
+<createdBy>hugo1</createdBy>
+<createdTime>2024-04-27 01:52:36 UTC</createdTime>
+<ownerDesignName>clase_proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="109F1718-2A60-EB5E-34FE-5A940DEFC445"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

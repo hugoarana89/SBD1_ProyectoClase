@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="61C5760C-7185-B877-E40B-83CE188E2668" name="Votación">
+<createdBy>hugo1</createdBy>
+<createdTime>2024-04-26 23:45:27 UTC</createdTime>
+<ownerDesignName>clase_proyecto</ownerDesignName>
+<engineerTo>
+<item key="50E54FF7-6C32-116B-2272-9A75B0425FD8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_votación" id="BE80E42A-DD2A-FC5B-792D-6776FA280C52">
+<createdBy>hugo1</createdBy>
+<createdTime>2024-04-26 23:45:52 UTC</createdTime>
+<ownerDesignName>clase_proyecto</ownerDesignName>
+<engineerTo>
+<item key="50E54FF7-6C32-116B-2272-9A75B0425FD8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_país" id="B6E1B115-249A-386E-7BF6-B6E3A8F8CC54">
+<createdBy>hugo1</createdBy>
+<createdTime>2024-04-26 23:46:34 UTC</createdTime>
+<generatorID>0265E5BA-E66A-C07E-A0A0-8F151A395B86</generatorID>
+<ownerDesignName>clase_proyecto</ownerDesignName>
+<engineerTo>
+<item key="50E54FF7-6C32-116B-2272-9A75B0425FD8" value="true"/>
+</engineerTo>
+<referedAttribute>7EE2EE6E-5131-12B7-7193-D4BE7C2E0F67</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="año_elección" id="030FDE1E-515B-26AE-EA7D-A4AFC9E8DB77">
+<createdBy>hugo1</createdBy>
+<createdTime>2024-04-26 23:46:46 UTC</createdTime>
+<generatorID>F046B15F-522B-63D1-3796-85E17523A681</generatorID>
+<ownerDesignName>clase_proyecto</ownerDesignName>
+<engineerTo>
+<item key="50E54FF7-6C32-116B-2272-9A75B0425FD8" value="true"/>
+</engineerTo>
+<referedAttribute>70CE0319-A6C0-CD67-ED30-C1EE20D7BAEB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="51EBEEF9-E6A4-8EF5-3E89-E11FCC7BC606" name="Votación PK">
+<createdBy>hugo1</createdBy>
+<createdTime>2024-04-26 23:46:00 UTC</createdTime>
+<ownerDesignName>clase_proyecto</ownerDesignName>
+<engineerTo>
+<item key="50E54FF7-6C32-116B-2272-9A75B0425FD8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BE80E42A-DD2A-FC5B-792D-6776FA280C52</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
