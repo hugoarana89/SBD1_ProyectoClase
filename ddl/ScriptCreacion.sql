@@ -28,12 +28,12 @@ CREATE TABLE `proyecto`.`pais` (
 );
 
 
-CREATE TABLE region (
+CREATE TABLE `proyecto`.`region` (
     `nombre_region` VARCHAR(10) NOT NULL,
     PRIMARY KEY (nombre_region)
 );
 
-CREATE TABLE zona (
+CREATE TABLE `proyecto`.`zona` (
     `id_zona` VARCHAR(25) NOT NULL,
     `nombre_pais`   VARCHAR(15) NOT NULL,
 	`nombre_region`   VARCHAR(10) NOT NULL,
@@ -48,7 +48,7 @@ ALTER TABLE zona
     ADD CONSTRAINT region_zona_fk FOREIGN KEY (nombre_region)
         REFERENCES region (nombre_region);		
 		
-CREATE TABLE departamento (
+CREATE TABLE `proyecto`.`departamento` (
 	`id_departamento` VARCHAR(50) NOT NULL,
     `nombre_departamento` VARCHAR(30) NOT NULL,
     `id_zona`       VARCHAR(25) NOT NULL,
@@ -58,7 +58,7 @@ ALTER TABLE departamento
     ADD CONSTRAINT departamento_zona_fk FOREIGN KEY (id_zona)
         REFERENCES zona (id_zona);
 		
-CREATE TABLE municipio (
+CREATE TABLE `proyecto`.`municipio` (
     `id_municipio` VARCHAR(50) NOT NULL,
     `nombre_municipio`    VARCHAR(40) NOT NULL,
     `id_departamento` VARCHAR(50) NOT NULL,
@@ -69,13 +69,13 @@ ALTER TABLE municipio
         REFERENCES departamento (id_departamento);
 		
 		
-CREATE TABLE eleccion (
+CREATE TABLE `proyecto`.`eleccion` (
     `año_eleccion`    INT NOT NULL,
     `nombre_eleccion` VARCHAR(30) NOT NULL,
     PRIMARY KEY (año_eleccion)
 );
 
-CREATE TABLE votacion (
+CREATE TABLE `proyecto`.`votacion` (
     `id_votacion`  VARCHAR(20) NOT NULL,
     `nombre_pais`  VARCHAR(15) NOT NULL,
     `año_eleccion` INT NOT NULL,
@@ -90,13 +90,13 @@ ALTER TABLE votacion
     ADD CONSTRAINT votacion_pais_fk FOREIGN KEY (nombre_pais)
         REFERENCES pais (nombre_pais);
 		
-CREATE TABLE partido (
+CREATE TABLE `proyecto`.`partido` (
     `partido`        VARCHAR(15) NOT NULL,
     `nombre_partido` VARCHAR(40) NOT NULL,
     PRIMARY KEY (partido)
 );
 
-CREATE TABLE participacion (
+CREATE TABLE `proyecto`.`participacion` (
     `id_participacion` VARCHAR(20) NOT NULL,
     `año_eleccion`     INT NOT NULL,
     `partido`          VARCHAR(15) NOT NULL,
@@ -111,17 +111,17 @@ ALTER TABLE participacion
     ADD CONSTRAINT participacion_partido_fk FOREIGN KEY (partido)
         REFERENCES partido (partido);
 		
-CREATE TABLE sexo (
+CREATE TABLE `proyecto`.`sexo` (
     `tipo_sexo`             VARCHAR(7) NOT NULL,
     PRIMARY KEY (tipo_sexo)
 );
 
-CREATE TABLE raza (
+CREATE TABLE `proyecto`.`raza` (
     `tipo_raza`             VARCHAR(15) NOT NULL,
     PRIMARY KEY (`tipo_raza`)
 );
 
-CREATE TABLE votantes (
+CREATE TABLE `proyecto`.`votantes` (
     `id_votantes`      int NOT NULL AUTO_INCREMENT,
     `sexo`             VARCHAR(7) NOT NULL,
     `raza`             VARCHAR(15) NOT NULL,

@@ -1,5 +1,6 @@
---Consulta 1
+use proyecto;
 
+--Consulta 1
 select partido.partido,  partido.nombre_partido as nombre, zona.nombre_pais as pais, votantes.año_eleccion as año, 
 (sum(analfabetos + alfabetos) /
 (select sum(votantes.analfabetos + votantes.alfabetos) as votos 

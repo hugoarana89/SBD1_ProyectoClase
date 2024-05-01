@@ -1,3 +1,4 @@
+use proyecto;
 insert into pais
 select DISTINCT pais from temporal;
 
